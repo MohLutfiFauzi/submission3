@@ -54,7 +54,7 @@ const createRestoDetailTemplate = (restaurant) => `
 const createRestoItemTemplate = (restaurant) => `
   <div class="restaurant-item">
     <div class="restaurant-item__header">
-    <img class="restaurant-item__header__poster" src="${
+    <img class="lazyload" class="restaurant-item__header__poster" data-src="${
   CONFIG.BASE_IMAGE_URL + restaurant.pictureId
 }" alt="${restaurant.name}"/>
         <div class="restaurant-item__header__rating">
